@@ -119,6 +119,10 @@ def custom_openapi():
 app.openapi = custom_openapi
 
 
+# #// Инициализация АПИ
+# if __name__ == "__main__":
+#     uvicorn.run("main:app", reload=True, port=1000, host="0.0.0.0")
+
 #// Инициализация АПИ
 if __name__ == "__main__":
-    uvicorn.run("main:app", reload=True, port=1000, host="0.0.0.0")
+    uvicorn.run("main:app", reload=True)
